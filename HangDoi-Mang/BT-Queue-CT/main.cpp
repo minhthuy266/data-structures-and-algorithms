@@ -2,6 +2,7 @@
 #include <string.h>
 #define MAX_OF_QUEUE 10
 using namespace std;
+
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 struct customer
