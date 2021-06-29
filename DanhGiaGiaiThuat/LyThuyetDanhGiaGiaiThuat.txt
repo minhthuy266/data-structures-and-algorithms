@@ -1,0 +1,34 @@
+// KHÁI NIỆM VỀ ĐÁNH GIÁ GIẢI THUẬT
+
+1. Đánh giá giải thuật
+- Độ phức tạp không gian (dung lượng bộ nhớ sử dụng)
+- Độ phức tạp thời gian
+  + Kỹ năng lập trình
+  + Trình biên dịch
+  + Tốc độ thực hiện các phép toán trên máy tính (tốc độ xử lý)
+  + Độ lớn của tập dữ liệu đầu vào.
+
+2. Độ phức tạp về thời gian
+- Thời gian chạy trong trường hợp xấu nhất (worse-case running time): 
+Thời gian chạy lớn nhất của thuật toán đó trên tất cả các dữ liệu cùng cỡ
+- Thời gian chạy trung bình: Là trung bình cộng thời gian chạy trên tất cả 
+các bộ dữ liệu cùng cỡ.
+- Thời gian chạy trong trường hợp tốt nhất (best-case running time): Thời gian
+chạy ít nhất của thuật toán trên tất cả dữ liệu cùng cỡ.
+
+3. Đánh giá thời gian chạy giải thuật
+- T(n) = Số lượng phép toán sơ cấp cần phải thực hiện (phép toán số học, logic, so
+sánh). Mỗi phép toán sơ cấp được thực hiện trong 1 khoảng thời gian nhất định
+- Quan tâm đến tốc độ tăng của hàm T(n)
+- Ví dụ T(n)=3n^3+9n^2+5n+7
+
+4. Biểu diễn thời gian chạy Big-O
+- Qui tắc cộng: K(n) và H(n) là thời gian thực hiện 2 đoạn chương trình P Q liên tiếp
+  K(n)=O(f(n))
+  H(n)=O(g(n))
+=> Thời gian thực hiện 2 đoạn này là T(n)=O(max((f(n),g(n)))
+
+- Qui tắc nhân: K(n) và H(n) là thời gian thực hiện 2 đoạn chương trình P Q lồng nhau
+  K(n)=O(f(n))
+  H(n)=O(g(n))
+=> Thời gian thực hiện 2 đoạn này là T(n)=O((f(n).g(n))
